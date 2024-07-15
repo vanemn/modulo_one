@@ -11,7 +11,7 @@
 }
 
 .navbar button {
-  background-color: aqua;
+  background-color: #e1f1f1;
 }
 .navbar-brand {
   padding-inline-start: 20px;
@@ -22,4 +22,38 @@
 .navbar img {
   height: 50px;
   width: auto;
+}
+
+#seccion-presentacion .iconos {
+  background-color: #4ec6f5;
+  height: 50px;
+  text-align: center;
+}
+
+#seccion-presentacion .card {
+  background-color: #4ec6f5;
+  text-align: justify;
+  border: 0px;
+}
+#seccion-presentacion {
+  background-color: black;
+}
+#seccion-presentacion .card-body {
+  background-color: black;
+  color: white;
+  font-size: small;
+  text-align: justify;
+}
+
+#seccion-destacados .card-body {
+  background-color: #4ec6f5;
+  height: 165px;
+  /* Ajusta la altura  */
+}
+#seccion-destacados {
+  background-color: black;
+}
+.card-img-top {
+  height: 150px; /* Ajusta la altura  */
+  object-fit: cover; /* recortar la imagen si es necesario */
 }
