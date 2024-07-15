@@ -6,4 +6,10 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       behavior: "smooth",
     });
   });
+
+  // Alerta al enviar el formulario Utilizar el evento “click” de jquery para mostrar una alerta
+
+  $("#EnviarCorreo").on("click", function () {
+    alert("el mensaje fué enviado correctamente");
+  });
 });
