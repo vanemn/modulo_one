@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página web examen</title>
-    <!-- Enlaces a recursos externos (Google Fonts no requiere) -->
+    <!-- Enlaces a recursos externos (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Enlaces a css -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -212,6 +218,32 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+<!-- Formulario de contacto -->
+    <section class="seccion-formulario p-5">
+      <h3 class="text-center text-white p-3">CONTACTO</h3>
+      <div class="container mt-5">
+        <form id="miFormulario">
+            <div class="form-group text-white">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="form-group text-white pt-3">
+                <label for="asunto">Asunto</label>
+                <input type="text" class="form-control" id="asunto" placeholder="Ingresa el asunto">
+            </div>
+            <div class="form-group text-white pt-3">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <div class="tooltip-container">
+              <div class="text-center pt-3">
+              <button id="EnviarCorreo" type="button" class="btn btn-outline-secondary text-white">
+                Enviar
+              </button> <span class="tooltip-text">Haz click para enviar mensaje</span>
+            </div>
+        </form>
       </div>
     </section>
 
