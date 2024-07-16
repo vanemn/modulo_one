@@ -67,3 +67,40 @@
   height: 150px; /* Ajusta la altura  */
   object-fit: cover; /* recortar la imagen si es necesario */
 }
+.seccion-formulario {
+  background-color: black;
+}
+/*Tooltip: Incluir un botón "Enviar por correo" con un tooltip aplicado.s */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Posiciona el tooltip encima del elemento */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+#EnviarCorreo {
+  background-color: #4ec6f5;
+}
+
+#footer {
+  background-color: black;
+  text-align: left;
+}

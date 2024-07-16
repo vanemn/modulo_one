@@ -1,15 +1,15 @@
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-    });
-  });
-
+$(document).ready(function () {
   // Alerta al enviar el formulario Utilizar el evento “click” de jquery para mostrar una alerta
 
-  $("#EnviarCorreo").on("click", function () {
+  $("#EnviarMensaje").on("click", function () {
     alert("el mensaje fué enviado correctamente");
+  });
+  // Eventos de teclado
+  $("#nombre").keydown(function () {
+    console.log("Tecla presionada en el campo de nombre");
+  });
+
+  $("#mensaje").keyup(function () {
+    console.log("Tecla soltada en el campo de email");
   });
 });
